@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+protocol ProcessInfoWrapperProtocol {
+    func getEnviromentVariables() -> Dictionary<String, String>
+}
+
+class ProcessInfoWrapper : ProcessInfoWrapperProtocol {
+    private let environment = ProcessInfo.processInfo.environment
+    
+    func getEnviromentVariables() -> Dictionary<String, String> {
+        return environment
+    }
+}

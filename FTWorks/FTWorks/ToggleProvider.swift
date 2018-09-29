@@ -9,7 +9,13 @@
 import Foundation
 
 class ToggleProvider : Provider {
+    private let processInfoWrapper : ProcessInfoWrapperProtocol
+    
+    init(processInfo: ProcessInfoWrapperProtocol = ProcessInfoWrapper()){
+        self.processInfoWrapper = processInfo
+    }
+    
     func getToggles() -> Dictionary<String, String>{
-        return Dictionary<String, String>()
+        return self.processInfoWrapper.getEnviromentVariables()
     }
 }

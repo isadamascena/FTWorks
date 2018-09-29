@@ -7,3 +7,16 @@
 //
 
 import Foundation
+@testable import FTWorks
+
+class ProcessInfoWrapperMock : ProcessInfoWrapperProtocol {
+    private let expectedReturn : Dictionary<String, String>
+    
+    init(toReturn expectedReturn: Dictionary<String,String>) {
+        self.expectedReturn = expectedReturn;
+    }
+    
+    func getEnviromentVariables() -> Dictionary<String, String> {
+        return self.expectedReturn
+    }
+}

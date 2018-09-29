@@ -16,10 +16,25 @@ class ToggleProviderTest: XCTestCase {
         XCTAssertNotNil(toggleProvider as? Provider)
     }
     
-    func testGetTogglesShoulRetrieveAEmptyDictionary() {
-        let toggleProvider : Provider = ToggleProvider()
+    func testGetTogglesShoulRetrieveAnEmptyDictionary() {
+        let expectedProcessInfoReturn    = Dictionary<String,String>()
+        let processInfoMock : ProcessInfoWrapperProtocol = ProcessInfoWrapperMock(toReturn: expectedProcessInfoReturn)
+        let toggleProvider : Provider = ToggleProvider(processInfo: processInfoMock)
+        
         let togglesDictionary = toggleProvider.getToggles()
+        
         XCTAssertNotNil(togglesDictionary)
         XCTAssertTrue(togglesDictionary.isEmpty)
+    }
+    
+    func testGetTogglesShouldRetriveAnNotEmptyDictionayIfProcessInfoReturnsData(){
+        let expectedProcessInfoReturn	= ["toggles": "wtv togles we have"]
+        let processInfoMock : ProcessInfoWrapperProtocol = ProcessInfoWrapperMock(toReturn: expectedProcessInfoReturn)
+        let toggleProvider : Provider = ToggleProvider(processInfo: processInfoMock)
+        
+        let togglesDictionary = toggleProvider.getToggles()
+        
+        XCTAssertNotNil(togglesDictionary)
+        XCTAssertTrue(!togglesDictionary.isEmpty)
     }
 }
