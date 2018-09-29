@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA701887215FC73C007955A6 /* FTWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = EA701885215FC73C007955A6 /* FTWorks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA701894215FCA93007955A6 /* ToggleProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA701893215FCA93007955A6 /* ToggleProviderTest.swift */; };
+		EA701896215FCA93007955A6 /* FTWorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA701882215FC73C007955A6 /* FTWorks.framework */; };
+		EA70189D215FCD2D007955A6 /* ToggleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70189C215FCD2D007955A6 /* ToggleProvider.swift */; };
+		EA70189F215FCD4F007955A6 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70189E215FCD4F007955A6 /* Provider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA701897215FCA93007955A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA701879215FC73C007955A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA701881215FC73C007955A6;
+			remoteInfo = FTWorks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA701882215FC73C007955A6 /* FTWorks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTWorks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA701885215FC73C007955A6 /* FTWorks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTWorks.h; sourceTree = "<group>"; };
+		EA701886215FC73C007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA701891215FCA93007955A6 /* FTWorksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTWorksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA701893215FCA93007955A6 /* ToggleProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleProviderTest.swift; sourceTree = "<group>"; };
+		EA701895215FCA93007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA70189C215FCD2D007955A6 /* ToggleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleProvider.swift; sourceTree = "<group>"; };
+		EA70189E215FCD4F007955A6 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA70187F215FC73C007955A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70188E215FCA93007955A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA701896215FCA93007955A6 /* FTWorks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA701878215FC73C007955A6 = {
+			isa = PBXGroup;
+			children = (
+				EA701884215FC73C007955A6 /* FTWorks */,
+				EA701892215FCA93007955A6 /* FTWorksTests */,
+				EA701883215FC73C007955A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA701883215FC73C007955A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA701882215FC73C007955A6 /* FTWorks.framework */,
+				EA701891215FCA93007955A6 /* FTWorksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA701884215FC73C007955A6 /* FTWorks */ = {
+			isa = PBXGroup;
+			children = (
+				EA701885215FC73C007955A6 /* FTWorks.h */,
+				EA701886215FC73C007955A6 /* Info.plist */,
+				EA70189C215FCD2D007955A6 /* ToggleProvider.swift */,
+				EA70189E215FCD4F007955A6 /* Provider.swift */,
+			);
+			path = FTWorks;
+			sourceTree = "<group>";
+		};
+		EA701892215FCA93007955A6 /* FTWorksTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA701893215FCA93007955A6 /* ToggleProviderTest.swift */,
+				EA701895215FCA93007955A6 /* Info.plist */,
+			);
+			path = FTWorksTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EA70187D215FC73C007955A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA701887215FC73C007955A6 /* FTWorks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EA701881215FC73C007955A6 /* FTWorks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70188A215FC73C007955A6 /* Build configuration list for PBXNativeTarget "FTWorks" */;
+			buildPhases = (
+				EA70187D215FC73C007955A6 /* Headers */,
+				EA70187E215FC73C007955A6 /* Sources */,
+				EA70187F215FC73C007955A6 /* Frameworks */,
+				EA701880215FC73C007955A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTWorks;
+			productName = FTWorks;
+			productReference = EA701882215FC73C007955A6 /* FTWorks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA701890215FCA93007955A6 /* FTWorksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA701899215FCA93007955A6 /* Build configuration list for PBXNativeTarget "FTWorksTests" */;
+			buildPhases = (
+				EA70188D215FCA93007955A6 /* Sources */,
+				EA70188E215FCA93007955A6 /* Frameworks */,
+				EA70188F215FCA93007955A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA701898215FCA93007955A6 /* PBXTargetDependency */,
+			);
+			name = FTWorksTests;
+			productName = FTWorksTests;
+			productReference = EA701891215FCA93007955A6 /* FTWorksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA701879215FC73C007955A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Isabelly Damascena";
+				TargetAttributes = {
+					EA701881215FC73C007955A6 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					EA701890215FCA93007955A6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = EA70187C215FC73C007955A6 /* Build configuration list for PBXProject "FTWorks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA701878215FC73C007955A6;
+			productRefGroup = EA701883215FC73C007955A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA701881215FC73C007955A6 /* FTWorks */,
+				EA701890215FCA93007955A6 /* FTWorksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA701880215FC73C007955A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70188F215FCA93007955A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA70187E215FC73C007955A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70189F215FCD4F007955A6 /* Provider.swift in Sources */,
+				EA70189D215FCD2D007955A6 /* ToggleProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70188D215FCA93007955A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA701894215FCA93007955A6 /* ToggleProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA701898215FCA93007955A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA701881215FC73C007955A6 /* FTWorks */;
+			targetProxy = EA701897215FCA93007955A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA701888215FC73C007955A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA701889215FC73C007955A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA70188B215FC73C007955A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTWorks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.icfd.FTWorks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA70188C215FC73C007955A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTWorks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.icfd.FTWorks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA70189A215FCA93007955A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTWorksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.icfd.FTWorksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA70189B215FCA93007955A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FTWorksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.icfd.FTWorksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA70187C215FC73C007955A6 /* Build configuration list for PBXProject "FTWorks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA701888215FC73C007955A6 /* Debug */,
+				EA701889215FC73C007955A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70188A215FC73C007955A6 /* Build configuration list for PBXNativeTarget "FTWorks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70188B215FC73C007955A6 /* Debug */,
+				EA70188C215FC73C007955A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA701899215FCA93007955A6 /* Build configuration list for PBXNativeTarget "FTWorksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70189A215FCA93007955A6 /* Debug */,
+				EA70189B215FCA93007955A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA701879215FC73C007955A6 /* Project object */;
+}
