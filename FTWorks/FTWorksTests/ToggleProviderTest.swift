@@ -11,16 +11,15 @@ import XCTest
 
 class ToggleProviderTest: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testToggleProviderShouldImplementProviderProtocol() {
         let toggleProvider : ToggleProvider = ToggleProvider()
         XCTAssertNotNil(toggleProvider as? Provider)
+    }
+    
+    func testGetTogglesShoulRetrieveAEmptyDictionary() {
+        let toggleProvider : Provider = ToggleProvider()
+        let togglesDictionary = toggleProvider.getToggles()
+        XCTAssertNotNil(togglesDictionary)
+        XCTAssertTrue(togglesDictionary.isEmpty)
     }
 }

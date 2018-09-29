@@ -8,4 +8,8 @@
 
 import Foundation
 
-class ToggleProvider : Provider {}
+class ToggleProvider : Provider {
+    func getToggles() -> Dictionary<String, String>{
+        return Dictionary<String, String>()
+    }
+}

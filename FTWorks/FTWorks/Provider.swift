@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol Provider {}
+protocol Provider {
+    func getToggles() -> Dictionary<String, String>
+}
