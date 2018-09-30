@@ -16,7 +16,7 @@ class FTWorks : FTWorksToggles {
         self.provider = provider
     }
     
-    func get() -> Dictionary<String, Bool> {
+    internal func get() -> Dictionary<String, Bool> {
         return provider.getTogglesPlist()
     }
 }
