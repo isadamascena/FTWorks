@@ -11,13 +11,18 @@ import XCTest
 
 class TogglePlistProviderTest : XCTestCase {
     
+    var togglePlistProvider : TogglePlistProvider!
+    
+    override func setUp() {
+        togglePlistProvider = TogglePlistProvider()
+    }
+    
     func testTogglePlistProviderShouldConformWithPlistProviderProtocol() {
-        let togglePlistProvider = TogglePlistProvider()
         XCTAssertNotNil(togglePlistProvider as? PlistProvider)
     }
     
     func testTogglePlistProviderShouldHaveAccessToMainBunddle() {
-        let togglePlistProvider = TogglePlistProvider()
         XCTAssertNotNil(togglePlistProvider.bundle)
     }
+    
 }
