@@ -20,7 +20,7 @@ class FTWorksTest : XCTestCase {
         let togglePlistProviderMock = TogglePlistProviderMock(toReturn: Dictionary<String, Bool>())
         let ftWorks = FTWorks(provider: togglePlistProviderMock)
         
-        _ = ftWorks.get()
+        ftWorks.retrieveToggles()
         
         XCTAssertTrue(togglePlistProviderMock.didCallGetTogglesPlist)
     }
@@ -28,6 +28,7 @@ class FTWorksTest : XCTestCase {
     func testIsToggleOnShouldRetrieveTrueWhenToggleIsListedWithTrueValue() {
         let togglePlistProviderMock = TogglePlistProviderMock(toReturn: ["isToggleOn": true])
         let ftWorks = FTWorks(provider: togglePlistProviderMock)
+        ftWorks.retrieveToggles()
         
         let isOn = ftWorks.isToggleOn("isToggleOn")
         
@@ -37,6 +38,7 @@ class FTWorksTest : XCTestCase {
     func testIsToggleOnShouldRetrieveFalseWhenToggleIsListedWithFalseValue() {
         let togglePlistProviderMock = TogglePlistProviderMock(toReturn: ["isToggleOn": false])
         let ftWorks = FTWorks(provider: togglePlistProviderMock)
+        ftWorks.retrieveToggles()
         
         let isOn = ftWorks.isToggleOn("isToggleOn")
         

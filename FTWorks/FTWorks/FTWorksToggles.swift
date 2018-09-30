@@ -9,6 +9,6 @@
 import Foundation
 
 protocol FTWorksToggles {
-    func get() -> Dictionary<String, Bool>
+    func retrieveToggles()
     func isToggleOn(_ name: String) -> Bool
 }
