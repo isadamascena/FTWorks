@@ -12,8 +12,9 @@ class FTWorks : FTWorksToggles {
     private let provider : PlistProvider
     private var toggles : Dictionary<String, Bool>!
     
-    static func instance() -> FTWorks {
-        let instance = FTWorks()
+    private static let instance = FTWorks()
+    
+    static func getInstance() -> FTWorks {
         instance.retrieveToggles()
         return instance
     }
