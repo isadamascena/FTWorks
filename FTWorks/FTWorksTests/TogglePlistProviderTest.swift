@@ -17,6 +17,11 @@ class TogglePlistProviderTest : XCTestCase {
         togglePlistProvider = TogglePlistProvider(forFile: PlistConstants.togglePlistName, of: PlistConstants.plistType)
     }
     
+    override func tearDown() {
+        togglePlistProvider.fileName = PlistConstants.togglePlistName
+        togglePlistProvider.fileType = PlistConstants.plistType
+    }
+    
     func testShouldConformWithPlistProviderProtocol() {
         XCTAssertNotNil(togglePlistProvider as? PlistProvider)
     }
@@ -43,4 +48,5 @@ class TogglePlistProviderTest : XCTestCase {
         
         XCTAssertTrue(toggles.isEmpty)
     }
+    
 }

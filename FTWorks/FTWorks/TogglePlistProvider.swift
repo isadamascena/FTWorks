@@ -20,6 +20,9 @@ class TogglePlistProvider : PlistProvider {
     }
     
     func getTogglesPlist() -> Dictionary<String, Bool> {
-        return Dictionary<String, Bool>()
+        guard let path = bundle.path(forResource: self.fileName, ofType: self.fileType) else {
+            return Dictionary<String, Bool>()
+        }
+        return NSDictionary(contentsOfFile: path) as! Dictionary<String,Bool>
     }
 }
