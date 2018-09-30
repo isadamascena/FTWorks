@@ -21,6 +21,6 @@ class FTWorks : FTWorksToggles {
     }
     
     func isToggleOn(_ name: String) -> Bool {
-        return true
+        return get()[name]!
     }
 }
