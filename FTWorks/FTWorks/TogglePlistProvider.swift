@@ -13,4 +13,9 @@ class TogglePlistProvider : PlistProvider {
     
     var fileName : String?
     var fileType : String?
+    
+    init(forFile file: String, of type: String) {
+        self.fileName = file
+        self.fileType = type
+    }
 }
