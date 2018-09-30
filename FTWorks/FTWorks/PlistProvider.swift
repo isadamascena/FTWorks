@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol PlistProvider {}
+protocol PlistProvider {
+    func getTogglesPlist() -> Dictionary<String, Bool>
+}

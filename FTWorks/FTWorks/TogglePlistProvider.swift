@@ -18,4 +18,8 @@ class TogglePlistProvider : PlistProvider {
         self.fileName = file
         self.fileType = type
     }
+    
+    func getTogglesPlist() -> Dictionary<String, Bool> {
+        return Dictionary<String, Bool>()
+    }
 }

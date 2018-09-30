@@ -34,4 +34,13 @@ class TogglePlistProviderTest : XCTestCase {
         XCTAssertNotNil(togglePlistProvider.fileType)
         XCTAssertTrue(togglePlistProvider.fileType == "plist")
     }
+    
+    func testTogglePlistProviderGetTogglesPlistShouldGetEmptyDictionaryWhenThereIsNoToggleFileSetUp() {
+        let fakeFileName = "File"
+        togglePlistProvider = TogglePlistProvider(forFile: fakeFileName, of: PlistConstants.plistType)
+        
+        let toggles : Dictionary<String, Bool> = togglePlistProvider.getTogglesPlist()
+        
+        XCTAssertTrue(toggles.isEmpty)
+    }
 }
