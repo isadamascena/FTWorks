@@ -12,6 +12,7 @@
 		EA7018C821610A94007955A6 /* TogglePlistProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */; };
 		EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018C921610B68007955A6 /* PlistProvider.swift */; };
 		EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */; };
+		EA7018CE21610EB7007955A6 /* PlistConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018CD21610EB7007955A6 /* PlistConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProviderTest.swift; sourceTree = "<group>"; };
 		EA7018C921610B68007955A6 /* PlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistProvider.swift; sourceTree = "<group>"; };
 		EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProvider.swift; sourceTree = "<group>"; };
+		EA7018CD21610EB7007955A6 /* PlistConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				EA701886215FC73C007955A6 /* Info.plist */,
 				EA7018C921610B68007955A6 /* PlistProvider.swift */,
 				EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */,
+				EA7018CD21610EB7007955A6 /* PlistConstants.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */,
+				EA7018CE21610EB7007955A6 /* PlistConstants.swift in Sources */,
 				EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

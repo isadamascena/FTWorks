@@ -15,6 +15,7 @@ class TogglePlistProviderTest : XCTestCase {
     
     override func setUp() {
         togglePlistProvider = TogglePlistProvider()
+        
     }
     
     func testTogglePlistProviderShouldConformWithPlistProviderProtocol() {
@@ -25,4 +26,17 @@ class TogglePlistProviderTest : XCTestCase {
         XCTAssertNotNil(togglePlistProvider.bundle)
     }
     
+    func testTogglePlistProviderShouldHaveTogglesAsFileName(){
+        togglePlistProvider.fileName = PlistConstants.togglePlistName
+        
+        XCTAssertNotNil(togglePlistProvider.fileName)
+        XCTAssertTrue(togglePlistProvider.fileName == "Toggles")
+    }
+    
+    func testTogglePlistProviderShouldHavePlistasFileType() {
+        togglePlistProvider.fileType = PlistConstants.plistType
+        
+        XCTAssertNotNil(togglePlistProvider.fileType)
+        XCTAssertTrue(togglePlistProvider.fileType == "plist")
+    }
 }

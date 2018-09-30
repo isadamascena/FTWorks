@@ -10,4 +10,7 @@ import Foundation
 
 class TogglePlistProvider : PlistProvider {
     let bundle : Bundle =  Bundle.main
+    
+    var fileName : String?
+    var fileType : String?
 }
