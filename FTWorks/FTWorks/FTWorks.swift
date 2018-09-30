@@ -28,6 +28,9 @@ class FTWorks : FTWorksToggles {
     }
     
     func isToggleOn(_ name: String) -> Bool {
-        return self.toggles[name]!
+        guard let toggle = self.toggles[name] else {
+            return false
+        }
+        return toggle
     }
 }

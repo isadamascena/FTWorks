@@ -44,4 +44,14 @@ class FTWorksTest : XCTestCase {
         
         XCTAssertFalse(isOn)
     }
+    
+    func testIsToggleOnShouldRetrievFalseWhenToggleIsNotListed() {
+        let togglePlistProviderMock = TogglePlistProviderMock(toReturn: ["isToggleOn": false])
+        let ftWorks = FTWorks(provider: togglePlistProviderMock)
+        ftWorks.retrieveToggles()
+        
+        let isOn = ftWorks.isToggleOn("fakeToggleName")
+        
+        XCTAssertFalse(isOn)
+    }
 }
