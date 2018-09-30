@@ -28,6 +28,13 @@ class FTWorks : FTWorksToggles {
         self.toggles = provider.getTogglesPlist()
     }
     
+    /**
+     Verifies whether the toggle within the parameter is On or Off. Also logs if it could not get a toggle.
+     
+     - Parameter name: The toggles's name.
+     
+     - Returns: A `Bool` value indicating whether the toggle is On of Off.
+     */
     func isToggleOn(_ name: String) -> Bool {
         guard let toggle = self.toggles[name] else {
             Logger.logger.debug("toggle with name= \(name) was not found among your set of toggles")
