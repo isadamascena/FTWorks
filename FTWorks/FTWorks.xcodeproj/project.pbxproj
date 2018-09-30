@@ -8,12 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA701887215FC73C007955A6 /* FTWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = EA701885215FC73C007955A6 /* FTWorks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA701894215FCA93007955A6 /* ToggleProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA701893215FCA93007955A6 /* ToggleProviderTest.swift */; };
 		EA701896215FCA93007955A6 /* FTWorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA701882215FC73C007955A6 /* FTWorks.framework */; };
-		EA70189D215FCD2D007955A6 /* ToggleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70189C215FCD2D007955A6 /* ToggleProvider.swift */; };
-		EA70189F215FCD4F007955A6 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70189E215FCD4F007955A6 /* Provider.swift */; };
-		EA7018A1215FDE3F007955A6 /* ProcessInfoWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018A0215FDE3F007955A6 /* ProcessInfoWrapper.swift */; };
-		EA7018A4215FE0C4007955A6 /* ProcessInfoWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018A3215FE0C4007955A6 /* ProcessInfoWrapperMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +26,7 @@
 		EA701885215FC73C007955A6 /* FTWorks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTWorks.h; sourceTree = "<group>"; };
 		EA701886215FC73C007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA701891215FCA93007955A6 /* FTWorksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTWorksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA701893215FCA93007955A6 /* ToggleProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleProviderTest.swift; sourceTree = "<group>"; };
 		EA701895215FCA93007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA70189C215FCD2D007955A6 /* ToggleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleProvider.swift; sourceTree = "<group>"; };
-		EA70189E215FCD4F007955A6 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		EA7018A0215FDE3F007955A6 /* ProcessInfoWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoWrapper.swift; sourceTree = "<group>"; };
-		EA7018A3215FE0C4007955A6 /* ProcessInfoWrapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoWrapperMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +71,6 @@
 			children = (
 				EA701885215FC73C007955A6 /* FTWorks.h */,
 				EA701886215FC73C007955A6 /* Info.plist */,
-				EA70189C215FCD2D007955A6 /* ToggleProvider.swift */,
-				EA70189E215FCD4F007955A6 /* Provider.swift */,
-				EA7018A0215FDE3F007955A6 /* ProcessInfoWrapper.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -91,19 +78,9 @@
 		EA701892215FCA93007955A6 /* FTWorksTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA7018A2215FE0B1007955A6 /* Mocks */,
-				EA701893215FCA93007955A6 /* ToggleProviderTest.swift */,
 				EA701895215FCA93007955A6 /* Info.plist */,
 			);
 			path = FTWorksTests;
-			sourceTree = "<group>";
-		};
-		EA7018A2215FE0B1007955A6 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				EA7018A3215FE0C4007955A6 /* ProcessInfoWrapperMock.swift */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7018A1215FDE3F007955A6 /* ProcessInfoWrapper.swift in Sources */,
-				EA70189F215FCD4F007955A6 /* Provider.swift in Sources */,
-				EA70189D215FCD2D007955A6 /* ToggleProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA701894215FCA93007955A6 /* ToggleProviderTest.swift in Sources */,
-				EA7018A4215FE0C4007955A6 /* ProcessInfoWrapperMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +389,6 @@
 		EA70189A215FCA93007955A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FTWorksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,7 +406,6 @@
 		EA70189B215FCA93007955A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FTWorksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
