@@ -19,4 +19,8 @@ class FTWorks : FTWorksToggles {
     internal func get() -> Dictionary<String, Bool> {
         return provider.getTogglesPlist()
     }
+    
+    func isToggleOn(_ name: String) -> Bool {
+        return true
+    }
 }

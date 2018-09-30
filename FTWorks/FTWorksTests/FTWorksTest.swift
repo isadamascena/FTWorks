@@ -17,12 +17,20 @@ class FTWorksTest : XCTestCase {
     }
     
     func testShouldRetrieveDictionaryFromTogglePlistProvider() {
-        let togglePlistProviderMock = TogglePlistProviderMock()
-        
+        let togglePlistProviderMock = TogglePlistProviderMock(toReturn: Dictionary<String, Bool>())
         let ftWorks = FTWorks(provider: togglePlistProviderMock)
         
         _ = ftWorks.get()
         
         XCTAssertTrue(togglePlistProviderMock.didCallGetTogglesPlist)
+    }
+    
+    func testIsToggleOnShouldRetrieveFalseWhenToggleIsNotListed() {
+        let togglePlistProviderMock = TogglePlistProviderMock(toReturn: ["isToggleOn": true])
+        let ftWorks = FTWorks(provider: togglePlistProviderMock)
+        
+        let isOn = ftWorks.isToggleOn("isToggleOn")
+        
+        XCTAssertTrue(isOn)
     }
 }

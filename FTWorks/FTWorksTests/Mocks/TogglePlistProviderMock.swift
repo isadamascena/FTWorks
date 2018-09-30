@@ -11,8 +11,14 @@ import Foundation
 
 class TogglePlistProviderMock: PlistProvider {
     var didCallGetTogglesPlist = false
+    var result : Dictionary<String, Bool>
+    
+    init(toReturn dict: Dictionary<String, Bool>) {
+        self.result = dict
+    }
+    
     func getTogglesPlist() -> Dictionary<String, Bool> {
         didCallGetTogglesPlist = true
-        return Dictionary<String,Bool>()
+        return self.result
     }
 }
