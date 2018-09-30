@@ -13,7 +13,9 @@
 		EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018C921610B68007955A6 /* PlistProvider.swift */; };
 		EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */; };
 		EA7018CE21610EB7007955A6 /* PlistConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018CD21610EB7007955A6 /* PlistConstants.swift */; };
-		EA7018D0216117AB007955A6 /* Toggles1.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7018CF216117AB007955A6 /* Toggles1.plist */; };
+		EA7018D221611BA6007955A6 /* FTWorksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D121611BA6007955A6 /* FTWorksTest.swift */; };
+		EA7018D421611C87007955A6 /* FTWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D321611C87007955A6 /* FTWorks.swift */; };
+		EA7018D621611CDF007955A6 /* FTWorksToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D521611CDF007955A6 /* FTWorksToggles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,9 @@
 		EA7018C921610B68007955A6 /* PlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistProvider.swift; sourceTree = "<group>"; };
 		EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProvider.swift; sourceTree = "<group>"; };
 		EA7018CD21610EB7007955A6 /* PlistConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistConstants.swift; sourceTree = "<group>"; };
-		EA7018CF216117AB007955A6 /* Toggles1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Toggles1.plist; sourceTree = "<group>"; };
+		EA7018D121611BA6007955A6 /* FTWorksTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorksTest.swift; sourceTree = "<group>"; };
+		EA7018D321611C87007955A6 /* FTWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorks.swift; sourceTree = "<group>"; };
+		EA7018D521611CDF007955A6 /* FTWorksToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorksToggles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				EA7018C921610B68007955A6 /* PlistProvider.swift */,
 				EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */,
 				EA7018CD21610EB7007955A6 /* PlistConstants.swift */,
+				EA7018D321611C87007955A6 /* FTWorks.swift */,
+				EA7018D521611CDF007955A6 /* FTWorksToggles.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -91,9 +97,9 @@
 		EA701892215FCA93007955A6 /* FTWorksTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA7018CF216117AB007955A6 /* Toggles1.plist */,
 				EA701895215FCA93007955A6 /* Info.plist */,
 				EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */,
+				EA7018D121611BA6007955A6 /* FTWorksTest.swift */,
 			);
 			path = FTWorksTests;
 			sourceTree = "<group>";
@@ -191,7 +197,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7018D0216117AB007955A6 /* Toggles1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7018D421611C87007955A6 /* FTWorks.swift in Sources */,
+				EA7018D621611CDF007955A6 /* FTWorksToggles.swift in Sources */,
 				EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */,
 				EA7018CE21610EB7007955A6 /* PlistConstants.swift in Sources */,
 				EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */,
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7018D221611BA6007955A6 /* FTWorksTest.swift in Sources */,
 				EA7018C821610A94007955A6 /* TogglePlistProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
