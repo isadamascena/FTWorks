@@ -21,6 +21,7 @@ class TogglePlistProvider : PlistProvider {
     
     func getTogglesPlist() -> Dictionary<String, Bool> {
         guard let path = bundle.path(forResource: self.fileName, ofType: self.fileType) else {
+            Logger.logger.debug("path for: \(self.fileName ?? "").\(self.fileType ?? "") not found within this project")
             return Dictionary<String, Bool>()
         }
         return NSDictionary(contentsOfFile: path) as! Dictionary<String,Bool>
