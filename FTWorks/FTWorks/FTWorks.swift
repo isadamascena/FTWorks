@@ -9,5 +9,14 @@
 import Foundation
 
 class FTWorks : FTWorksToggles {
+    private let provider : PlistProvider
     
+    init(provider: PlistProvider =
+        TogglePlistProvider(forFile: PlistConstants.togglePlistName, of: PlistConstants.plistType)){
+        self.provider = provider
+    }
+    
+    func get() -> Dictionary<String, Bool> {
+        return provider.getTogglesPlist()
+    }
 }

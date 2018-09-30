@@ -16,6 +16,7 @@
 		EA7018D221611BA6007955A6 /* FTWorksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D121611BA6007955A6 /* FTWorksTest.swift */; };
 		EA7018D421611C87007955A6 /* FTWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D321611C87007955A6 /* FTWorks.swift */; };
 		EA7018D621611CDF007955A6 /* FTWorksToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D521611CDF007955A6 /* FTWorksToggles.swift */; };
+		EA7018D92161212A007955A6 /* TogglePlistProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		EA7018D121611BA6007955A6 /* FTWorksTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorksTest.swift; sourceTree = "<group>"; };
 		EA7018D321611C87007955A6 /* FTWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorks.swift; sourceTree = "<group>"; };
 		EA7018D521611CDF007955A6 /* FTWorksToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorksToggles.swift; sourceTree = "<group>"; };
+		EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProviderMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,20 @@
 		EA701892215FCA93007955A6 /* FTWorksTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA7018D721612115007955A6 /* Mocks */,
 				EA701895215FCA93007955A6 /* Info.plist */,
 				EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */,
 				EA7018D121611BA6007955A6 /* FTWorksTest.swift */,
 			);
 			path = FTWorksTests;
+			sourceTree = "<group>";
+		};
+		EA7018D721612115007955A6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7018D221611BA6007955A6 /* FTWorksTest.swift in Sources */,
+				EA7018D92161212A007955A6 /* TogglePlistProviderMock.swift in Sources */,
 				EA7018C821610A94007955A6 /* TogglePlistProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

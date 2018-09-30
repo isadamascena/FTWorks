@@ -15,4 +15,14 @@ class FTWorksTest : XCTestCase {
         let ftWorks = FTWorks()
         XCTAssertNotNil(ftWorks as? FTWorksToggles)
     }
+    
+    func testShouldRetrieveDictionaryFromTogglePlistProvider() {
+        let togglePlistProviderMock = TogglePlistProviderMock()
+        
+        let ftWorks = FTWorks(provider: togglePlistProviderMock)
+        
+        _ = ftWorks.get()
+        
+        XCTAssertTrue(togglePlistProviderMock.didCallGetTogglesPlist)
+    }
 }

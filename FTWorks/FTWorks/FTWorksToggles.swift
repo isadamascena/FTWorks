@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol FTWorksToggles {}
+protocol FTWorksToggles {
+    func get() -> Dictionary<String, Bool>
+}
