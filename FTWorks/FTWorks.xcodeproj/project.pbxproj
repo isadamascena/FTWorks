@@ -87,14 +87,13 @@
 		EA701884215FC73C007955A6 /* FTWorks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7018DF21617B4A007955A6 /* Provider */,
+				EA7018DE21617B3A007955A6 /* Logger */,
 				EA701885215FC73C007955A6 /* FTWorks.h */,
 				EA701886215FC73C007955A6 /* Info.plist */,
-				EA7018C921610B68007955A6 /* PlistProvider.swift */,
-				EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */,
-				EA7018CD21610EB7007955A6 /* PlistConstants.swift */,
+				EA7018E021617B5F007955A6 /* Constants */,
 				EA7018D321611C87007955A6 /* FTWorks.swift */,
 				EA7018D521611CDF007955A6 /* FTWorksToggles.swift */,
-				EA7018DC2161782E007955A6 /* Logger.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -116,6 +115,31 @@
 				EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EA7018DE21617B3A007955A6 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				EA7018DC2161782E007955A6 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		EA7018DF21617B4A007955A6 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				EA7018C921610B68007955A6 /* PlistProvider.swift */,
+				EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		EA7018E021617B5F007955A6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EA7018CD21610EB7007955A6 /* PlistConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
