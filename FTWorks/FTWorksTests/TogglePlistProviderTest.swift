@@ -17,25 +17,25 @@ class TogglePlistProviderTest : XCTestCase {
         togglePlistProvider = TogglePlistProvider(forFile: PlistConstants.togglePlistName, of: PlistConstants.plistType)
     }
     
-    func testTogglePlistProviderShouldConformWithPlistProviderProtocol() {
+    func testShouldConformWithPlistProviderProtocol() {
         XCTAssertNotNil(togglePlistProvider as? PlistProvider)
     }
     
-    func testTogglePlistProviderShouldHaveAccessToMainBunddle() {
+    func testShouldHaveAccessToMainBunddle() {
         XCTAssertNotNil(togglePlistProvider.bundle)
     }
     
-    func testTogglePlistProviderShouldHaveTogglesAsFileName(){
+    func testShouldHaveTogglesAsFileName(){
         XCTAssertNotNil(togglePlistProvider.fileName)
         XCTAssertTrue(togglePlistProvider.fileName == "Toggles")
     }
     
-    func testTogglePlistProviderShouldHavePlistasFileType() {
+    func testShouldHavePlistasFileType() {
         XCTAssertNotNil(togglePlistProvider.fileType)
         XCTAssertTrue(togglePlistProvider.fileType == "plist")
     }
     
-    func testTogglePlistProviderGetTogglesPlistShouldGetEmptyDictionaryWhenThereIsNoToggleFileSetUp() {
+    func testGetTogglesPlistShouldGetEmptyDictionaryWhenThereIsNoToggleFileSetUp() {
         let fakeFileName = "File"
         togglePlistProvider = TogglePlistProvider(forFile: fakeFileName, of: PlistConstants.plistType)
         
