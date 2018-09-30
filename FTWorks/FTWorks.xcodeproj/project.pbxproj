@@ -17,6 +17,7 @@
 		EA7018D421611C87007955A6 /* FTWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D321611C87007955A6 /* FTWorks.swift */; };
 		EA7018D621611CDF007955A6 /* FTWorksToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D521611CDF007955A6 /* FTWorksToggles.swift */; };
 		EA7018D92161212A007955A6 /* TogglePlistProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */; };
+		EA7018DD2161782E007955A6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018DC2161782E007955A6 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		EA7018D321611C87007955A6 /* FTWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorks.swift; sourceTree = "<group>"; };
 		EA7018D521611CDF007955A6 /* FTWorksToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTWorksToggles.swift; sourceTree = "<group>"; };
 		EA7018D82161212A007955A6 /* TogglePlistProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProviderMock.swift; sourceTree = "<group>"; };
+		EA7018DC2161782E007955A6 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				EA7018CD21610EB7007955A6 /* PlistConstants.swift */,
 				EA7018D321611C87007955A6 /* FTWorks.swift */,
 				EA7018D521611CDF007955A6 /* FTWorksToggles.swift */,
+				EA7018DC2161782E007955A6 /* Logger.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7018D421611C87007955A6 /* FTWorks.swift in Sources */,
+				EA7018DD2161782E007955A6 /* Logger.swift in Sources */,
 				EA7018D621611CDF007955A6 /* FTWorksToggles.swift in Sources */,
 				EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */,
 				EA7018CE21610EB7007955A6 /* PlistConstants.swift in Sources */,
