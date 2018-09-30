@@ -9,5 +9,5 @@
 import Foundation
 
 class TogglePlistProvider : PlistProvider {
-    
+    let bundle : Bundle =  Bundle.main
 }

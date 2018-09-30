@@ -16,4 +16,8 @@ class TogglePlistProviderTest : XCTestCase {
         XCTAssertNotNil(togglePlistProvider as? PlistProvider)
     }
     
+    func testTogglePlistProviderShouldHaveAccessToMainBunddle() {
+        let togglePlistProvider = TogglePlistProvider()
+        XCTAssertNotNil(togglePlistProvider.bundle)
+    }
 }
