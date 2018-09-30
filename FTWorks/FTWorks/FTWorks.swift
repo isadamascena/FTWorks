@@ -30,6 +30,7 @@ class FTWorks : FTWorksToggles {
     
     func isToggleOn(_ name: String) -> Bool {
         guard let toggle = self.toggles[name] else {
+            Logger.logger.debug("toggle with name= \(name) was not found among your set of toggles")
             return false
         }
         return toggle
