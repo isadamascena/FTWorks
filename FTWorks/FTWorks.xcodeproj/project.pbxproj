@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EA701887215FC73C007955A6 /* FTWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = EA701885215FC73C007955A6 /* FTWorks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA701896215FCA93007955A6 /* FTWorks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA701882215FC73C007955A6 /* FTWorks.framework */; };
+		EA7018C821610A94007955A6 /* TogglePlistProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */; };
+		EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018C921610B68007955A6 /* PlistProvider.swift */; };
+		EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 		EA701886215FC73C007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA701891215FCA93007955A6 /* FTWorksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTWorksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA701895215FCA93007955A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProviderTest.swift; sourceTree = "<group>"; };
+		EA7018C921610B68007955A6 /* PlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistProvider.swift; sourceTree = "<group>"; };
+		EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePlistProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 			children = (
 				EA701885215FC73C007955A6 /* FTWorks.h */,
 				EA701886215FC73C007955A6 /* Info.plist */,
+				EA7018C921610B68007955A6 /* PlistProvider.swift */,
+				EA7018CB21610B77007955A6 /* TogglePlistProvider.swift */,
 			);
 			path = FTWorks;
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EA701895215FCA93007955A6 /* Info.plist */,
+				EA7018C721610A94007955A6 /* TogglePlistProviderTest.swift */,
 			);
 			path = FTWorksTests;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 					};
 					EA701890215FCA93007955A6 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -192,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7018CA21610B68007955A6 /* PlistProvider.swift in Sources */,
+				EA7018CC21610B77007955A6 /* TogglePlistProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7018C821610A94007955A6 /* TogglePlistProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +402,8 @@
 		EA70189A215FCA93007955A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FTWorksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -398,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icfd.FTWorksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +422,8 @@
 		EA70189B215FCA93007955A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FTWorksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
