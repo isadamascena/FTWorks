@@ -9,7 +9,7 @@
 import XCTest
 @testable import FTWorks
 
-class FTWorksTest {
+class FTWorksTest : XCTestCase {
     
     func testShouldConformWithFTWorksTogglesProtocol() {
         let ftWorks = FTWorks()

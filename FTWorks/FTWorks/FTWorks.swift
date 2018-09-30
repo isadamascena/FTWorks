@@ -8,6 +8,6 @@
 
 import Foundation
 
-class FTWorks {
+class FTWorks : FTWorksToggles {
     
 }
