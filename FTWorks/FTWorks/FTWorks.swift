@@ -8,12 +8,22 @@
 
 import Foundation
 
+/**
+Intuitive framework for implementing Feature Toggles
+ 
+Written by: Isabelly Damscena
+*/
 class FTWorks : FTWorksToggles {
     private let provider : PlistProvider
     private var toggles : Dictionary<String, Bool>!
     
     private static let instance = FTWorks()
     
+    /**
+     Gets an Singleton instance of FTWorks.
+     
+     - Returns: A `FTWorks` instance.
+     */
     static func getInstance() -> FTWorks {
         instance.retrieveToggles()
         return instance
