@@ -16,6 +16,6 @@ internal class Logger {
     private init() {}
     
     func debug(_ message: String){
-        print(message)
+        print("[DEBUG] \(message)")
     }
 }
